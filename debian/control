@@ -1,0 +1,37 @@
+Source: node-parse-asn1
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-asn1.js <!nocheck>
+ , node-browserify-aes <!nocheck>
+ , node-evp-bytestokey <!nocheck>
+ , node-pbkdf2 <!nocheck>
+ , node-safe-buffer <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-parse-asn1
+Vcs-Git: https://salsa.debian.org/js-team/node-parse-asn1.git
+Homepage: https://github.com/crypto-browserify/parse-asn1#readme
+Rules-Requires-Root: no
+
+Package: node-parse-asn1
+Architecture: all
+Depends: ${misc:Depends}
+ , node-asn1.js
+ , node-browserify-aes
+ , node-evp-bytestokey
+ , node-pbkdf2
+ , node-safe-buffer
+Description: utility library for parsing asn1 files
+ utility library for parsing asn1 files for use with browserify-sign.
+ .
+ This library is a dependency for webpack. Webpack takes code targeted at
+ node.js and makes it run in the browser. Node.js comes with API of its own
+ that is not available in the browsers. Webpack exposes this code
+ to programs that are unaware they are running in a browser.
+ .
+ Node.js is an event-based server-side JavaScript engine.

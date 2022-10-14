@@ -1,0 +1,59 @@
+node-parse-asn1 (5.1.6-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Fix field name typos in debian/copyright.
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Use dh-sequence-nodejs
+  * Remove dependency to nodejs
+  * New upstream version 5.1.6
+  * Remove dependency to node-create-hash
+  * Add dependency to node-safe-buffer
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 26 Dec 2020 09:37:23 +0100
+
+node-parse-asn1 (5.1.5-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.1
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Drop unneeded version constraints from (build) dependencies
+  * New upstream version 5.1.5
+  * Switch test and install to pkg-js-tools
+  * Use tape for test instead of tap like upstream
+  * Add "Rules-Requires-Root: no"
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 08 Oct 2019 20:41:22 +0200
+
+node-parse-asn1 (5.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * Bump compat and policy (no changes)
+  * Review and improve debian/copyright
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 19 May 2018 21:50:36 +0200
+
+node-parse-asn1 (5.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump compat and policy
+  * Change section to javascript
+  * Modernize rules
+  * Fix autopkgtest
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 20 Aug 2017 23:26:54 +0200
+
+node-parse-asn1 (5.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #864870)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 16 Jun 2017 15:34:52 +0530
